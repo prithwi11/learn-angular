@@ -1,0 +1,4 @@
+<h1>This is from parent component</h1>
+<!-- <app-child-component [childSelector]="parentText"></app-child-component> -->
+<app-child-component (messageEvent)="receiveMessage($event)"></app-child-component>
+<p>{{  message }}</p>

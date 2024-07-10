@@ -1,0 +1,8 @@
+<app-item-child (newItemEvent)="addItem($event)"></app-item-child>
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>
+
+<!-- The newItemEvent connects the child component to the addItem function -->
+<!-- The input box & the button is on the child component so whenever someone write some thing and press the button it comes to the addItem function of the parent component -->
+<!-- The child component is bound to the parent component -->
